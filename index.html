@@ -2175,12 +2175,12 @@ function executeShare(type){
         <button class="modal-close" onclick="closeShareModal()">✕</button>
       </div>
       <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px">
-        <a href="${gmailUrl}" target="_blank" onclick="closeShareModal()" style="display:flex;align-items:center;gap:12px;padding:13px 18px;background:var(--bg2);border:1.5px solid var(--border-md);border-radius:12px;text-decoration:none;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:500;transition:border-color .15s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border-md)'">
+        <a href=${JSON.stringify(gmailUrl)} target="_blank" onclick="closeShareModal()" style="display:flex;align-items:center;gap:12px;padding:13px 18px;background:var(--bg2);border:1.5px solid var(--border-md);border-radius:12px;text-decoration:none;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:500;transition:border-color .15s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border-md)'">
           <span style="font-size:20px">📧</span>
           <div><div style="font-weight:600">Open Gmail</div><div style="font-size:11px;color:var(--text)">Opens in a new tab, report pre-filled</div></div>
           <span style="margin-left:auto;color:var(--text)">→</span>
         </a>
-        <a href="${outlookUrl}" target="_blank" onclick="closeShareModal()" style="display:flex;align-items:center;gap:12px;padding:13px 18px;background:var(--bg2);border:1.5px solid var(--border-md);border-radius:12px;text-decoration:none;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:500;transition:border-color .15s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border-md)'">
+        <a href=${JSON.stringify(outlookUrl)} target="_blank" onclick="closeShareModal()" style="display:flex;align-items:center;gap:12px;padding:13px 18px;background:var(--bg2);border:1.5px solid var(--border-md);border-radius:12px;text-decoration:none;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:500;transition:border-color .15s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border-md)'">
           <span style="font-size:20px">📨</span>
           <div><div style="font-weight:600">Open Outlook</div><div style="font-size:11px;color:var(--text)">Opens Outlook Web, report pre-filled</div></div>
           <span style="margin-left:auto;color:var(--text)">→</span>
